@@ -58,7 +58,7 @@ function Get-NonDefaultServices {
                     $_.StartName -notlike "*NETWORK SERVICE" -and
                     $_.StartName -notlike "*LOCAL SERVICE" -and
                     $_.StartName -notlike "*System" -and
-                    $_.StartName -ne $null
+                    $null -ne $_.StartName
                 }
 
                 # Collect results and output to console
