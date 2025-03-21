@@ -74,10 +74,10 @@ function Get-NonDefaultServices {
                     Write-Output "Computer: $($result.Computer), Service: $($result.ServiceName), Display Name: $($result.DisplayName), Start Name: $($result.StartName)"
                 }
             } catch {
-                Write-Host "Error: Unable to enumerate services on $computerName. $_"
+                Write-Host "Error: Unable to enumerate services on $computerName. $_" -ForegroundColor Yellow
             }
         } else {
-            Write-Host "Error: Unable to reach $computerName."
+            Write-Host "Error: Unable to reach $computerName." -ForegroundColor Yellow
         }
     }
 
