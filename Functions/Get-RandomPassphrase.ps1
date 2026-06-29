@@ -23,14 +23,14 @@
     The delimiter to use between words in the passphrase. Default is '-'.
 
 .EXAMPLE
-    Get-Passphrase -WordCount 4 -AddNumber -AddCapital -Delimiter '.'
+    Get-RandomPassphrase -WordCount 4 -AddNumber -AddCapital -Delimiter '.'
 
 .NOTES
     Author: Paul Hite (AI Assisted)
     Date: January 3, 2025
 #>
 
-function Get-Passphrase {
+function Get-RandomPassphrase {
     param (
         [string]$FilePath,
         [int]$WordCount = 3,
